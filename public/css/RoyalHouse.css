@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     font-family: sans-serif;
@@ -48,28 +49,35 @@ body {
     background-color: #fff;
     color: #444;
     background-color: lightslategray;
+    padding-left: 20%;
+    padding-right: 20%;
 }
-.member-picture {
-    max-height: 200px;
-    max-width: 200px;
-    padding-left: 50%;
-    padding-right: 50%;
+ /* .member-picture {
+
 }
 
 .member-picture-right {
-    position: absolute;
-    max-height: 200px;
-    max-width: 200px;
-    padding-left: 50%;
-    padding-right: 50%;
-    right: -1000px;
-    animation-name: slide-in;
-    animation-duration: 0.75s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
 
-}
+} 
+
 .grid-text {
+    /* text-align: center;
+} */
+
+h2 {
     text-align: center;
+}
+
+main {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+}
+
+.footer-link:hover {
+    transform: scale(1.1);
 }
