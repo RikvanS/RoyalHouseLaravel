@@ -1,0 +1,75 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+.hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0,0.5)), url('../Images/cover_alt.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    font-size: 5em;
+
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .button {
+    display: block;
+    width: 200px;
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 2em;
+    background-color: #fff;
+    color: #444;
+    background-color: lightslategray;
+}
+.member-picture {
+    max-height: 200px;
+    max-width: 200px;
+    padding-left: 50%;
+    padding-right: 50%;
+}
+
+.member-picture-right {
+    position: absolute;
+    max-height: 200px;
+    max-width: 200px;
+    padding-left: 50%;
+    padding-right: 50%;
+    right: -1000px;
+    animation-name: slide-in;
+    animation-duration: 0.75s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+
+}
+.grid-text {
+    text-align: center;
+}
