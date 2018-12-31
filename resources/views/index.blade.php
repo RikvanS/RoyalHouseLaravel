@@ -20,16 +20,16 @@
             <section>
                     <h2>The members</h2>
         <div class="grid-container">
-            <div class="1"><img src="Images/Erik.jpg" class="member-picture"></div>
+            <div class="grid-image"><img src="Images/Erik.jpg" class="member-picture"></div>
             <div class="grid-text">Bio sectie Erik. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, eos vitae quo dicta reiciendis adipisci dignissimos non omnis, exercitationem laudantium, porro aliquam distinctio eius obcaecati. Culpa aut quae cupiditate. Eius. </div>
             <div class="grid-text">Bio sectie Saikat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente est eos labore, enim vel quos pariatur, quod laborum dignissimos consequatur exercitationem. Atque esse ducimus aperiam dolorem officiis autem eos necessitatibus!</div>
-            <div class="4"><img src="Images/Saikat.jpg" class="member-picture-right"></div>
-            <div class="5"><img src="Images/hugo.jpg" class="member-picture"></div>
+            <div class="grid-image"><img src="Images/Saikat.jpg" class="member-picture-right"></div>
+            <div class="grid-image"><img src="Images/hugo.jpg" class="member-picture"></div>
             <div class="grid-text">Bio sectie Hugo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ea exercitationem. Beatae ratione impedit libero cumque provident, aperiam, voluptas ipsam quidem iste animi cupiditate ipsa! Sequi enim ea vel ratione.</div>
             <div class="grid-text">Bio sectie Dimitris. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quaerat veniam dolorem ea pariatur laboriosam. Inventore, itaque, officiis a fuga optio voluptate minus non voluptatem ratione, cupiditate earum ad officia.</div>
-            <div class="8"><img src="Images/Dimitris.jpg" class="member-picture-right"></div>
-            <div class="9"><img src="Images/person5.jpeg" class="member-picture"></div>
-            <div class="0">Bio sectie persoon 5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni soluta autem quam distinctio suscipit consectetur expedita molestias, fuga explicabo? Vel exercitationem reprehenderit earum, laborum rem sit necessitatibus accusantium dolorem!</div>
+            <div class="grid-image"><img src="Images/Dimitris.jpg" class="member-picture-right"></div>
+            <div class="grid-image"><img src="Images/person5.jpeg" class="member-picture"></div>
+            <div class="grid-text">Bio sectie persoon 5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni soluta autem quam distinctio suscipit consectetur expedita molestias, fuga explicabo? Vel exercitationem reprehenderit earum, laborum rem sit necessitatibus accusantium dolorem!</div>
         </div>
         </section>
 
@@ -41,8 +41,8 @@
     </main>
     <footer>
         <h2>Find us on:</h2>
-        <a href="https://www.youtube.com/channel/UCFUj-jgxPiy6brY3TgeSSwA/featured"><img src="../Images/YouTube-icon.png" alt="Youtube" class="footer-link"></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCFUj-jgxPiy6brY3TgeSSwA/featured"><img src="../Images/YouTube-icon.png" alt="Youtube" class="footer-link"></a>
         <a href=""><img src="../Images/Instagram-icon.png" alt="Instagram" class="footer-link"></a>
-        <a href="https://www.facebook.com/RoyalHouserockcovers/"><img src="../Images/facebook.png" alt="Facebook" class="footer-link"></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/RoyalHouserockcovers/"><img src="../Images/facebook.png" alt="Facebook" class="footer-link"></a>
     </footer>
 </body>
