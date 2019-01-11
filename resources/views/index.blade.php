@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Royal House</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('css/RoyalHouse.css') }}" />
     <script src="{{ asset('js/main.js') }}"></script>
 </head>
@@ -13,7 +16,7 @@
     <div class="hero-inner">
     <h1>Royal House</h1>
     <h2>Rock & Roll Coverband</h2>
-    <a href="#" class="button">Book us now!</a>
+    <a href="#contact-form" class="button">Book us now!</a>
     </div>
     </section>
     <main>
@@ -42,14 +45,74 @@
 
         <section>
             <h2>Contact us!</h2>
-            <p>placeholder gebied voor contact form</p>
+
+            <div class="container contact-form" id="contact-form">
+                {{-- @if (session('status'))
+                    <div class="alert alert-success">
+                        {{ session('status') }}
+                    </div>
+                @endif
+                @if (session('warning'))
+                    <div class="alert alert-warning">
+                        {{ session('warning') }}
+                    </div>
+                @endif --}}
+                @if(session('success'))
+                <h2>{{session('success')}}</h2>
+            @endif
+        
+        <form method="post" action="{{ route('contactus.store') }}">
+            {{ csrf_field() }}
+           <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group {{ $errors->has('name') ? ' has-error' : '' }}">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name *"   />
+             @if ($errors->has('name'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+             @endif
+                    </div>
+                    <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
+                        <input type="email" name="email" class="form-control" placeholder="Your Email *"   />
+                         @if ($errors->has('email'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                         @endif
+                    </div>
+                    <div class="form-group {{ $errors->has('subject') ? ' has-error' : '' }}">
+                        <input type="text" name="subject" class="form-control" placeholder="Subject *"  />
+                        @if ($errors->has('subject'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('subject') }}</strong>
+                                    </span>
+                         @endif
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="btnSubmit" class="btn btn-primary btn-round btn-sm" value="Send Message" />
+                        
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group {{ $errors->has('message') ? ' has-error' : '' }}">
+                        <textarea name="message" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;" ></textarea>
+             @if ($errors->has('message'))
+            <span class="help-block">
+            <strong>{{ $errors->first('message') }}</strong>
+            </span>
+            @endif
+                    </div>
+                </div>
+            </div>
+        </form>
+</div>
         </section>
         
     </main>
     <footer>
         <h2>Find us on:</h2>
         <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCFUj-jgxPiy6brY3TgeSSwA/featured"><img src="../Images/YouTube-icon.png" alt="Youtube" class="footer-link"></a>
-        <a href=""><img src="../Images/Instagram-icon.png" alt="Instagram" class="footer-link"></a>
         <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/RoyalHouserockcovers/"><img src="../Images/facebook.png" alt="Facebook" class="footer-link"></a>
     </footer>
 </body>

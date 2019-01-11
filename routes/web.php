@@ -21,3 +21,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::get('/', 'MainController@main');
+
+// Contact form
+// Route::get('contact-us', 'ContactUSController@contactUS');
+Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUSController@contactSaveData']);
+
+
+// CRUD/news posts
+Route::resource('posts', 'PostController');
