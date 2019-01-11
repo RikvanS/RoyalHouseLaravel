@@ -6,7 +6,7 @@
     <title>Royal House</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('css/RoyalHouse.css') }}" />
-    <script src="main.js"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
 </head>
 <body>
     <section class="hero">
@@ -17,6 +17,13 @@
     </div>
     </section>
     <main>
+
+        <nav>
+            <div class="sidenav" id="sidenav">
+                <a href="">News</a>
+                <a href="">Other link</a>
+            </div>
+        </nav>
             <section>
                     <h2>The members</h2>
         <div class="grid-container">
